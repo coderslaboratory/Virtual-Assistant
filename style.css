@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(75, 255, 246);
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    padding: 45px;
+    position: absolute;
+    left: 25%;
+    background-color: rgba(0, 0, 0.1, 0.4);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: "Kanit";
+}
+
+p {
+    color: rgb(255, 212, 133);
+    font-size: 20px;
+}
+
+.btn {
+    margin-top: 22px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1c8820;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.4s;
+}
+
+.btn:hover {
+    background-color: #1dc726;
+}
+
+.listening {
+    animation: pulse 2s infinite;
+    background-color: #2d65ff;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
